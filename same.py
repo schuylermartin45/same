@@ -36,11 +36,11 @@ def read_input():
     # read from file
     if (len(sys.argv) > 1):
         for line in open(sys.argv[1]):
-            str_lst.append(line.strip(" "))
+            str_lst.append(line.rstrip(" "))
     # read from STDIN
     else:
         for line in sys.stdin:
-            str_lst.append(line.strip(" "))
+            str_lst.append(line.rstrip(" "))
     return(str_lst)
 
 def main():
